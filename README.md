@@ -1,7 +1,3 @@
-# Gilles Turpin
-
-AI Engineer — Fine-tuning, RAG, Agents — Python
-
 I build systems that make LLMs actually useful: autonomous agents, retrieval pipelines, and model optimization. I also contribute to open-source ML infrastructure.
 
 ## Open Source Contributions
