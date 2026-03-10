@@ -1,7 +1,5 @@
 
-# Hi, I'm Gilles 
-
-ML Engineer specializing in LLM quantization and inference optimization. Active open-source contributor to the vLLM ecosystem.
+I specialize in LLM quantization and inference optimization. Active open-source contributor to the vLLM ecosystem.
 
 ## Open Source Contributions
 
