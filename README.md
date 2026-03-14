@@ -4,7 +4,6 @@ I build and optimize LLM systems. Active open-source contributor to the vLLM eco
 ## Open Source Contributions
 
 **[vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor)** — Quantization toolkit for LLM deployment with vLLM
-- [[RFC] iMatrix weighted MSE observer for weight quantization](https://github.com/vllm-project/llm-compressor/issues/2456) — 21% perplexity reduction at W3, 2.5× GSM8K accuracy improvement
 - [Add MoE calibration module for GlmMoeDsa (GLM-5)](https://github.com/vllm-project/llm-compressor/pull/2434) — Packed 3D tensor handling for MoE architectures
 - [Fix topological ordering in FX graph cleanup](https://github.com/vllm-project/llm-compressor/pull/2426) — erase_node crash fix for Granite4 GPTQ
 - [Handle packed weights in granite4 to_3d_expert (W4A16)](https://github.com/vllm-project/llm-compressor/pull/2425)
