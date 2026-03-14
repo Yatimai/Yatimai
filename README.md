@@ -1,5 +1,5 @@
 
-I specialize in LLM quantization and inference optimization. Active open-source contributor to the vLLM ecosystem.
+I build and optimize LLM systems. Active open-source contributor to the vLLM ecosystem.
 
 ## Open Source Contributions
 
