@@ -13,9 +13,9 @@ I build and optimize LLM systems. Active open-source contributor to the vLLM eco
 - [Add SmoothQuant mapping for GLM-5](https://github.com/vllm-project/llm-compressor/pull/2419)
 - [Add AWQ mapping for GLM-5](https://github.com/vllm-project/llm-compressor/pull/2418)
 
-**[vllm-project/compressed-tensors](https://github.com/vllm-project/compressed-tensors)**
+**[vllm-project/compressed-tensors](https://github.com/vllm-project/compressed-tensors)** — Safetensors extension for sparse and quantized tensor storage
 
-- [Support N-dimensional tensors in pack/unpack_int32](https://github.com/vllm-project/compressed-tensors/pull/609)
+- [Support N-dimensional tensors in pack/unpack_int32](https://github.com/vllm-project/compressed-tensors/pull/609) — fixes 3D MoE expert weight packing
 
 ## Projects
 
