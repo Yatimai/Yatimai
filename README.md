@@ -21,4 +21,4 @@ I build and optimize LLM systems. Active open-source contributor to the vLLM eco
 
 - **[ai-watch](https://github.com/Yatimai/ai-watch)** — Autonomous AI news agent via LangGraph + Claude
 - **[reasonforge](https://github.com/Yatimai/reasonforge)** — Iterative LLM fine-tuning on Text-to-SQL using STaR
-- **[finsight](https://github.com/Yatimai/finsight)** — Visual RAG for financial document analysis with ColQwen2, Qdrant, Claude
+- **[finsight](https://github.com/Yatimai/finsight)** — Visual RAG for financial document analysis with ColQwen2.5, Qdrant, Claude
