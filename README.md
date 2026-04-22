@@ -1,4 +1,4 @@
-I build and optimize LLM systems. Active open-source contributor to the vLLM ecosystem.
+I build and optimize LLM systems. Active open-source contributor to the vLLM ecosystem (llm-compressor, compressed-tensors). I also develop production-grade LLM applications in RAG, fine-tuning, and autonomous agents.
 
 ## Open Source Contributions
 
