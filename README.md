@@ -19,7 +19,7 @@ I build and optimize LLM systems. Active open-source contributor to the vLLM eco
 
 ## Projects
 
-- **[finsight](https://github.com/Yatimai/finsight)** : Visual RAG for French financial documents using ColQwen2.5 + Qdrant + Claude Sonnet/Opus. Indexed 10 annual reports (~5,982 pages). 90% Recall@10, 100% citation accuracy. Async FastAPI backend with SSE streaming + background adversarial verification, React + base-ui frontend. 183 tests, CI/CD.
+- **[finsight](https://github.com/Yatimai/finsight)** : Visual RAG for French financial documents (ColQwen2.5 + Qdrant + Claude Opus 4.7). Indexed 10 annual reports (~5,982 pages). 92% Recall@10, 84% answer accuracy (LLM-judge on non-circular ground truth), 92% citation faithfulness. Async FastAPI backend with SSE streaming + independent background verification (Sonnet 4.6), React frontend. 184 tests, CI/CD.
 - **[reasonforge](https://github.com/Yatimai/reasonforge)** : Iterative LLM fine-tuning on Text-to-SQL using STaR (Self-Taught Reasoner). Ministral-8B: 60.1% baseline → 68.8% SFT → 78.0% after 3 STaR iterations on Spider dev set.
 
 - **[ai-watch](https://github.com/Yatimai/ai-watch)** : Autonomous AI news agent via LangGraph + Claude tool-use. Aggregates HuggingFace Papers, GitHub Trending, and Simon Willison RSS into daily markdown briefings. Deployed on GitHub Pages, running via GitHub Actions.
