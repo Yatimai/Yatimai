@@ -18,4 +18,4 @@
 
 ## GPU Kernels (FP4 / Blackwell)
 
-NVFP4/MXFP4 kernel optimization on B200 (SOL-ExecBench, NVIDIA): median SOL 0.89 across 12 NVFP4 problems, benchmark of 235 real-model kernels scored by distance to the hardware roofline. Techniques: fused FP4 quantization, vectorized memory access, warp-level reduction, and a hand-written Blackwell 4-bit matmul (CUDA, tcgen05, async copies) where it mattered.
+NVFP4 kernel optimization on B200 ([SOL-ExecBench](https://research.nvidia.com/benchmarks/sol-execbench), NVIDIA): median SOL 0.89 across 12 NVFP4 problems, benchmark of 235 real-model kernels scored by distance to the hardware roofline. Techniques: fused FP4 quantization, vectorized memory access, warp-level reduction, and a hand-written Blackwell 4-bit matmul (CUDA, tcgen05, async copies) where it mattered.
