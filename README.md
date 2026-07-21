@@ -14,3 +14,7 @@
 **[vllm-project/compressed-tensors](https://github.com/vllm-project/compressed-tensors)** : Safetensors extension for sparse and quantized tensor storage
 
 - [Support N-dimensional tensors in pack/unpack_int32](https://github.com/vllm-project/compressed-tensors/pull/609) : fixes 3D MoE expert weight packing
+
+## GPU Kernels (FP4 / Blackwell)
+
+NVFP4/MXFP4 kernel optimization on B200 (SOL-ExecBench, NVIDIA): median SOL 0.89 across 12 NVFP4 problems, benchmark of 235 real-model kernels scored by distance to the hardware roofline. Techniques: fused FP4 quantization, vectorized memory access, warp-level reduction, and a hand-written Blackwell 4-bit matmul (CUDA, tcgen05, async copies) where it mattered.
