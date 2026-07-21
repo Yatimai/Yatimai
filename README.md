@@ -2,7 +2,7 @@
 
 **[vllm-project/llm-compressor](https://github.com/vllm-project/llm-compressor)** : Quantization toolkit for LLM deployment with vLLM
 
-- [Add iMatrix weighted MSE observer and IMatrixGatherer](https://github.com/vllm-project/llm-compressor/pull/2473) : importance-weighted quantization, improves PPL across RTN/GPTQ/AWQ
+- [Add iMatrix weighted MSE observer and IMatrixGatherer](https://github.com/vllm-project/llm-compressor/pull/2473) : importance-weighted (E[x²]) range selection, no Hessian required
 - [Add norm calibration context for unit-offset RMSNorm (Gemma/Qwen3Next)](https://github.com/vllm-project/llm-compressor/pull/2500) : fixes AWQ/SmoothQuant on Gemma models
 - [Add MoE calibration module for GlmMoeDsa (GLM-5)](https://github.com/vllm-project/llm-compressor/pull/2434) : packed 3D tensor handling for MoE architectures
 - [Fix topological ordering in FX graph cleanup](https://github.com/vllm-project/llm-compressor/pull/2426) : erase_node crash fix for Granite4 GPTQ
@@ -13,6 +13,7 @@
 
 **[vllm-project/compressed-tensors](https://github.com/vllm-project/compressed-tensors)** : Safetensors extension for sparse and quantized tensor storage
 
+- [Fix cast_to_fp4 per-rank torch.compile recompilation](https://github.com/vllm-project/compressed-tensors/pull/741) : fixes dynamo recompile storm on NVFP4 MoE generation
 - [Support N-dimensional tensors in pack/unpack_int32](https://github.com/vllm-project/compressed-tensors/pull/609) : fixes 3D MoE expert weight packing
 
 ## GPU Kernels (FP4 / Blackwell)
