@@ -1,8 +1,7 @@
 ## Open Source Contributions
 
-Twelve merged pull requests across three core repositories of the
-[vllm-project](https://github.com/vllm-project) organization,
-reviewed and merged by core maintainers at Red Hat (ex-Neural Magic).
+Merged in three core repositories of the
+[vllm-project](https://github.com/vllm-project) organization.
 
 ### [vllm](https://github.com/vllm-project/vllm) : the inference engine
 
@@ -11,6 +10,8 @@ reviewed and merged by core maintainers at Red Hat (ex-Neural Magic).
   `inplace` parameter, which corrupted weights under QuIP transforms
 
 ### [llm-compressor](https://github.com/vllm-project/llm-compressor) : quantization toolkit for LLM deployment
+
+*Reviewed and merged by core maintainers at Red Hat (ex-Neural Magic).*
 
 - [**iMatrix weighted MSE observer and IMatrixGatherer**](https://github.com/vllm-project/llm-compressor/pull/2473) :
   importance-weighted (E[x²]) range selection, no Hessian required
@@ -30,6 +31,8 @@ reviewed and merged by core maintainers at Red Hat (ex-Neural Magic).
   QuIP + GPTQ + NVFP4A16
 
 ### [compressed-tensors](https://github.com/vllm-project/compressed-tensors) : safetensors extension for sparse and quantized tensors
+
+*Reviewed and merged by core maintainers at Red Hat (ex-Neural Magic).*
 
 - [**N-dimensional tensor support in pack/unpack_int32**](https://github.com/vllm-project/compressed-tensors/pull/609) :
   fixes 3D MoE expert weight packing
@@ -65,5 +68,5 @@ tcgen05, async copies) where it mattered.
   Spider dev: 60.1% to 72.1% greedy, 78.0% with k=16 self-consistency
   (vLLM + LoRA + H200).
 - **[ai-watch](https://github.com/Yatimai/ai-watch)** : autonomous AI
-  news agent on LangGraph. Daily briefings in production for five
-  months via GitHub Actions.
+  news agent on LangGraph. Daily briefings in production since
+  February 2026 via GitHub Actions.
