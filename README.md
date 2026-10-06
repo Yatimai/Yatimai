@@ -56,12 +56,12 @@ Techniques: fused FP4 quantization, vectorized memory access,
 warp-level reduction, and a custom Blackwell 4-bit matmul (CUDA,
 tcgen05, async copies) where it mattered.
 
-**[gemm-ladder](https://github.com/Yatimai/gemm-ladder)** : the same
-matrix product on four GPU generations, one mechanism per step against
-cuBLAS, with predictions written before each measurement and kept when
-wrong. Turing (T4) is measured: bank conflicts, not the bytes moved,
-held the tensor-core kernels back, and padding gave x1.79. Ampere,
-Hopper and Blackwell are next.
+- **[gemm-ladder](https://github.com/Yatimai/gemm-ladder)** : the same
+  matrix product on four GPU generations, one mechanism per step against
+  cuBLAS, with predictions written before each measurement and kept when
+  wrong. Turing (T4) is measured: bank conflicts, not the bytes moved,
+  held the tensor-core kernels back, and padding gave x1.79. Ampere,
+  Hopper and Blackwell are next.
 
 ## Applied AI Systems
 
