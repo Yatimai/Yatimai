@@ -59,8 +59,9 @@ tcgen05, async copies) where it mattered.
 - **[gemm-ladder](https://github.com/Yatimai/gemm-ladder)** : the same
   matrix product on four GPU generations, one mechanism per step against
   cuBLAS, with predictions written before each measurement and kept when
-  wrong. Turing (T4) is measured: bank conflicts, not the bytes moved,
-  held the tensor-core kernels back, and padding gave x1.79. Ampere,
+  wrong. Turing (T4) and Ampere (A100) are measured: on the T4, bank
+  conflicts, not the bytes moved, held the tensor-core kernels back and
+  padding gave x1.79; on the A100, four cp.async stages gave x1.28.
   Hopper and Blackwell are next.
 
 ## Applied AI Systems
