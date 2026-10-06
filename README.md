@@ -39,7 +39,7 @@ Merged in three core repositories of the
 - [**cast_to_fp4 per-rank torch.compile recompilation fix**](https://github.com/vllm-project/compressed-tensors/pull/741) :
   removes a Dynamo recompile storm on NVFP4 MoE generation
 
-## GPU Kernels
+## GPU Kernels (FP4 / Blackwell)
 
 NVFP4 kernel optimization on B200 ([SOL-ExecBench](https://research.nvidia.com/benchmarks/sol-execbench), NVIDIA):
 median SOL 0.89 across 12 NVFP4 problems, on a benchmark of 235
@@ -55,14 +55,6 @@ reconfiguration raised occupancy to 96% and cut kernel time by 21%.
 Techniques: fused FP4 quantization, vectorized memory access,
 warp-level reduction, and a custom Blackwell 4-bit matmul (CUDA,
 tcgen05, async copies) where it mattered.
-
-- **[gemm-ladder](https://github.com/Yatimai/gemm-ladder)** : the same
-  matrix product on four GPU generations, one mechanism per step against
-  cuBLAS, with predictions written before each measurement and kept when
-  wrong. Turing (T4) and Ampere (A100) are measured: on the T4, bank
-  conflicts, not the bytes moved, held the tensor-core kernels back and
-  padding gave x1.79; on the A100, four cp.async stages gave x1.28.
-  Hopper and Blackwell are next.
 
 ## Applied AI Systems
 
