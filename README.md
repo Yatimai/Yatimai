@@ -39,22 +39,14 @@ Merged in three core repositories of the
 - [**cast_to_fp4 per-rank torch.compile recompilation fix**](https://github.com/vllm-project/compressed-tensors/pull/741) :
   removes a Dynamo recompile storm on NVFP4 MoE generation
 
-## GPU Kernels (FP4 / Blackwell)
+## GPU Kernels
 
-NVFP4 kernel optimization on B200 ([SOL-ExecBench](https://research.nvidia.com/benchmarks/sol-execbench), NVIDIA):
-median SOL 0.89 across 12 NVFP4 problems, on a benchmark of 235
-real-model kernels scored by distance to the hardware roofline rather
-than by speedup over PyTorch.
-
-Method: model the roofline first, then change one variable per
-iteration and validate against an NCU counter baseline rather than
-wall-clock. One case: NCU refuted a SASS-level hypothesis and
-identified latency-bound behaviour at 25% achieved occupancy; grid
-reconfiguration raised occupancy to 96% and cut kernel time by 21%.
-
-Techniques: fused FP4 quantization, vectorized memory access,
-warp-level reduction, and a custom Blackwell 4-bit matmul (CUDA,
-tcgen05, async copies) where it mattered.
+[gemm-ladder](https://github.com/Yatimai/gemm-ladder): cuBLAS's fp16 GEMM rebuilt one
+mechanism per step on four generations of NVIDIA GPUs, then pushed past it. First rung
+published: on a T4, from NVIDIA's tensor-core sample (0.62x) to 1.07x cuBLAS at its best,
+all 17 shapes won. Every figure is reproducible with the measurement tools in the
+repository, and each output records the md5 of the sources it measured. Ampere in
+progress, Hopper and Blackwell to follow.
 
 ## Applied AI Systems
 
