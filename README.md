@@ -41,12 +41,12 @@ Merged in three core repositories of the
 
 ## GPU Kernels
 
-[gemm-ladder](https://github.com/Yatimai/gemm-ladder): cuBLAS's fp16 GEMM rebuilt one
-mechanism per step on four generations of NVIDIA GPUs, then pushed past it. First rung
-published: on a T4, from NVIDIA's tensor-core sample (0.62x) to 1.07x cuBLAS at its best,
-all 17 shapes won. Every figure is reproducible with the measurement tools in the
-repository, and each output records the md5 of the sources it measured. Ampere in
-progress, Hopper and Blackwell to follow.
+- **[gemm-ladder](https://github.com/Yatimai/gemm-ladder)** : cuBLAS's fp16 GEMM
+  rebuilt one mechanism per step on four generations of NVIDIA GPUs, then pushed
+  past it. First rung (T4): from NVIDIA's tensor-core sample (0.62x) to 1.07x
+  cuBLAS at its best, all 17 shapes won, every figure reproducible with the
+  measurement tools in the repository. Ampere in progress, Hopper and Blackwell
+  to follow.
 
 ## Applied AI Systems
 
