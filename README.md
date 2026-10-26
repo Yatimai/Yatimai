@@ -43,7 +43,7 @@ Merged in three repositories of the
 
 - **[gemm-ladder](https://github.com/Yatimai/gemm-ladder)** : an fp16 GEMM
   built step by step on a T4 and an A100, from NVIDIA's tensor-core sample,
-  adapted (0.62x and 0.27x), to 1.05x and 1.01x the judge's fastest cuBLASLt
+  adapted (0.61x and 0.27x), to 1.05x and 1.02x the judge's fastest cuBLASLt
   configuration, with the tools and raw outputs in the repository.
 
 ## Applied AI Systems
